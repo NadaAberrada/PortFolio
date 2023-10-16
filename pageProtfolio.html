@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Your Name - Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-image text-white text-center py-5">
+        <div class="container">
+            <!-- Your professional information goes here -->
+            <h1 class="display-4">Your Name</h1>
+            <p class="lead">Web Developer</p>
+        </div>
+    </header>
+
+
+    <!-- Sections... -->
+    <section id="projects" class="bg-light py-5">
+      <div class="container">
+        <h2 class="mb-4">Projects</h2>
+        <!-- Add your project details here -->
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Contact</h2>
+        <p>You can reach me at: your@email.com</p>
+        <!-- Add more contact details or a contact form if needed -->
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for sticky navbar -->
+    <script>
+      $(document).ready(function () {
+        var navbar = $('.navbar')
+
+        $(window).scroll(function () {
+          if ($(window).scrollTop() <= 50) {
+            navbar.removeClass('navbar-scroll')
+          } else {
+            navbar.addClass('navbar-scroll')
+          }
+        })
+      })
+    </script>
+  </body>
+</html>

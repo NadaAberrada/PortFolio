@@ -1,0 +1,16 @@
+/* Add your custom styles here */
+
+/* Style for the sticky navigation bar */
+.navbar-scroll {
+  background-color: #333 !important;
+}
+/* Add your custom styles here */
+
+/* Style for the header with a background image */
+.bg-image {
+  background-image: url('path/to/your/header-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Set the text color to be visible against the background */
+}
